@@ -1,0 +1,28 @@
+#configuring toml
+[project]
+name = "ecommerce"
+version = "1.0.0"
+description = "Developing ecommerce application"
+readme = "README.md"
+authors = [
+    {name="madhu",email="madhujainar@gmail.com"}
+]
+requires-python = ">=3.8"
+#production dependencies
+dependencies = [
+    "faker>=13.3.4"
+]
+
+#developement dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.2.0",
+    "pytest-cov>=3.0.0",
+    "black>=23.3.0",
+    "isort>=5.0.0",
+    "sphinx>=5.0.0"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py313']
