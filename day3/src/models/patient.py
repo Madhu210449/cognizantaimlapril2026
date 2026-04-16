@@ -1,0 +1,17 @@
+"""
+create patient model to represent patient data
+"""
+import typing
+from datetime import date
+class Patient:
+    """
+    patient model to represent patient data
+    """
+   
+    def __init__(self, id: int, name: str, dob: date, ailment: str):
+        self.id = id
+        self.name = name
+        self.dob = dob
+        self.ailment = ailment
+    def __str__(self):
+        return f"Patient(id={self.id}, name='{self.name}', dob='{self.dob}', ailment='{self.ailment}')"
