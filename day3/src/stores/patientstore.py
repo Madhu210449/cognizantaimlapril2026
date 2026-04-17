@@ -13,7 +13,7 @@ project_root = os.path.abspath(
 )
 sys.path.insert(0, project_root)
 from conf.logger_conf import setup_logger
-logger = setup_logger()
+logger = setup_logger("patientstore.log")
 
 
 class PatientStore:

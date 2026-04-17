@@ -1,0 +1,4 @@
+2026-04-17 06:51:48 - doctor - INFO - Welcome to the Doctor App
+2026-04-17 06:51:48 - doctor - INFO - Doctor added: Doctor(id=142, name='Edward Serrano', specialization='Commercial art gallery manager')
+2026-04-17 06:55:10 - doctor - INFO - Welcome to the Doctor App
+2026-04-17 06:55:10 - doctor - INFO - Doctor added: Doctor(id=826, name='Jon Carter', specialization='Conservation officer, historic buildings')

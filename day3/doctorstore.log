@@ -1,0 +1,4 @@
+2026-04-17 06:51:48 - doctorstore - INFO - Adding doctor Doctor(id=142, name='Edward Serrano', specialization='Commercial art gallery manager')
+2026-04-17 06:51:48 - doctorstore - INFO - Getting doctor with id 142
+2026-04-17 06:55:10 - doctorstore - INFO - Adding doctor Doctor(id=826, name='Jon Carter', specialization='Conservation officer, historic buildings')
+2026-04-17 06:55:10 - doctorstore - INFO - Getting doctor with id 826

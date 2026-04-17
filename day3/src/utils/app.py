@@ -21,7 +21,10 @@ from src.stores.appoinmentstore import AppoinmentStore
 entry point for healthcare application . this module will initialize the application and start the main loop
 """
 
-logger = setup_logger()
+doctor_logger = setup_logger("doctor.log")
+patient_logger = setup_logger("patient.log")
+appointment_logger = setup_logger("appointment.log")
+app_logger = setup_logger("app.log")
 faker = Faker()
 doctorstore = DoctorStore()
 patientstore = PatientStore()
@@ -32,30 +35,31 @@ doctor_id=0
 patient_id=0
 
 def doctor_app():
-    logger.info("Welcome to the Doctor App")
+    doctor_logger.info("Welcome to the Doctor App")
     doctor=Doctor(id = faker.random_int(min=1, max=1000), name=faker.name(), specialization=faker.job())
     doctorstore.add_doctor(doctor)
-    logger.info(f"Doctor added: {doctor}")
+    doctor_logger.info(f"Doctor added: {doctor}")
     global doctor_id
     doctor_id = doctor.id
  
 
 def patient_app():
-    logger.info("Welcome to the Patient App")
+    patient_logger.info("Welcome to the Patient App")
     patient=Patient(id = faker.random_int(min=1, max=1000), name=faker.name(), dob=faker.date_of_birth(), ailment=faker.sentence())
     patientstore.add_patient(patient)
-    logger.info(f"Patient added: {patient}")
+    patient_logger.info(f"Patient added: {patient}")
     global patient_id
     patient_id = patient.id
     
 
 def appoinment_app():
-    logger.info("Welcome to the Appoinment App")
+    appointment_logger.info("Welcome to the Appoinment App")
     appoinment=Appointment(id = faker.random_int(min=1, max=1000), doctor = doctorstore.get_doctor_by_id(doctor_id), patient = patientstore.get_patient_by_id(patient_id), date=faker.date_time(), time=faker.time())
     appoinmentstore.add_appoinment(appoinment)
-    logger.info(f"Appoinment added: {appoinment}")
+    appointment_logger.info(f"Appoinment added: {appoinment}")
     
 if __name__ == "__main__":
+    app_logger.info("Starting Healthcare Application")
     doctor_app()
     patient_app()
     appoinment_app()
