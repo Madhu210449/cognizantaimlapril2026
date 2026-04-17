@@ -21,3 +21,51 @@
 2026-04-17 05:05:38 - healthcare_logger - INFO - Getting doctor with id 1
 2026-04-17 05:05:38 - healthcare_logger - INFO - Updating doctor with id 1
 2026-04-17 05:05:38 - healthcare_logger - INFO - Getting doctor with id 1
+2026-04-17 06:25:37 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:26:08 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:26:08 - healthcare_logger - INFO - Adding doctor Doctor(id=348, name='Sally Hernandez', specialization='Therapist, drama')
+2026-04-17 06:26:08 - healthcare_logger - INFO - Doctor added: Doctor(id=348, name='Sally Hernandez', specialization='Therapist, drama')
+2026-04-17 06:26:08 - healthcare_logger - INFO - Getting all doctors
+2026-04-17 06:26:08 - healthcare_logger - INFO - Getting doctor with id 348
+2026-04-17 06:26:08 - healthcare_logger - INFO - Updating doctor with id 348
+2026-04-17 06:26:08 - healthcare_logger - INFO - Getting doctor with id 348
+2026-04-17 06:26:44 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:26:44 - healthcare_logger - INFO - Adding doctor Doctor(id=976, name='Carrie Peterson', specialization='Research officer, political party')
+2026-04-17 06:26:44 - healthcare_logger - INFO - Doctor added: Doctor(id=976, name='Carrie Peterson', specialization='Research officer, political party')
+2026-04-17 06:26:44 - healthcare_logger - INFO - Welcome to the Patient App
+2026-04-17 06:26:44 - healthcare_logger - INFO - Adding patient Patient(id=316, name='Chelsey Hunter', dob='1938-06-03', ailment='Important myself unit sure especially feeling out.')
+2026-04-17 06:26:44 - healthcare_logger - INFO - Patient added: Patient(id=316, name='Chelsey Hunter', dob='1938-06-03', ailment='Important myself unit sure especially feeling out.')
+2026-04-17 06:26:44 - healthcare_logger - INFO - Welcome to the Appoinment App
+2026-04-17 06:26:44 - healthcare_logger - INFO - Getting doctor with id 976
+2026-04-17 06:26:44 - healthcare_logger - INFO - Retrieving patient with id 316
+2026-04-17 06:27:01 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:27:01 - healthcare_logger - INFO - Adding doctor Doctor(id=227, name='Amber Henderson', specialization='Printmaker')
+2026-04-17 06:27:01 - healthcare_logger - INFO - Doctor added: Doctor(id=227, name='Amber Henderson', specialization='Printmaker')
+2026-04-17 06:27:01 - healthcare_logger - INFO - Welcome to the Patient App
+2026-04-17 06:27:01 - healthcare_logger - INFO - Adding patient Patient(id=590, name='Michael Green', dob='2011-12-22', ailment='Exactly religious lose significant for responsibility health.')
+2026-04-17 06:27:01 - healthcare_logger - INFO - Patient added: Patient(id=590, name='Michael Green', dob='2011-12-22', ailment='Exactly religious lose significant for responsibility health.')
+2026-04-17 06:27:01 - healthcare_logger - INFO - Welcome to the Appoinment App
+2026-04-17 06:27:01 - healthcare_logger - INFO - Getting doctor with id 227
+2026-04-17 06:27:01 - healthcare_logger - INFO - Retrieving patient with id 590
+2026-04-17 06:28:08 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:28:08 - healthcare_logger - INFO - Adding doctor Doctor(id=625, name='Kevin Cobb', specialization='Production manager')
+2026-04-17 06:28:08 - healthcare_logger - INFO - Doctor added: Doctor(id=625, name='Kevin Cobb', specialization='Production manager')
+2026-04-17 06:28:08 - healthcare_logger - INFO - Welcome to the Patient App
+2026-04-17 06:28:08 - healthcare_logger - INFO - Adding patient Patient(id=45, name='Jonathon Decker', dob='1960-04-30', ailment='Market government personal any call just.')
+2026-04-17 06:28:08 - healthcare_logger - INFO - Patient added: Patient(id=45, name='Jonathon Decker', dob='1960-04-30', ailment='Market government personal any call just.')
+2026-04-17 06:28:08 - healthcare_logger - INFO - Welcome to the Appoinment App
+2026-04-17 06:28:08 - healthcare_logger - INFO - Getting doctor with id 625
+2026-04-17 06:28:08 - healthcare_logger - INFO - Retrieving patient with id 45
+2026-04-17 06:28:08 - healthcare_logger - INFO - Adding appoinment Appointment(id=414, date='2013-08-05 14:31:02.475659', time='20:10:25', doctor=Doctor(id=625, name='Kevin Cobb', specialization='Production manager'), patient=Patient(id=45, name='Jonathon Decker', dob='1960-04-30', ailment='Market government personal any call just.'))
+2026-04-17 06:28:08 - healthcare_logger - INFO - Appoinment added: Appointment(id=414, date='2013-08-05 14:31:02.475659', time='20:10:25', doctor=Doctor(id=625, name='Kevin Cobb', specialization='Production manager'), patient=Patient(id=45, name='Jonathon Decker', dob='1960-04-30', ailment='Market government personal any call just.'))
+2026-04-17 06:29:39 - healthcare_logger - INFO - Welcome to the Doctor App
+2026-04-17 06:29:39 - healthcare_logger - INFO - Adding doctor Doctor(id=724, name='Eduardo Barnes', specialization='Interior and spatial designer')
+2026-04-17 06:29:39 - healthcare_logger - INFO - Doctor added: Doctor(id=724, name='Eduardo Barnes', specialization='Interior and spatial designer')
+2026-04-17 06:29:39 - healthcare_logger - INFO - Welcome to the Patient App
+2026-04-17 06:29:39 - healthcare_logger - INFO - Adding patient Patient(id=638, name='Barbara Hall', dob='1984-07-12', ailment='There institution former sit sell nor.')
+2026-04-17 06:29:39 - healthcare_logger - INFO - Patient added: Patient(id=638, name='Barbara Hall', dob='1984-07-12', ailment='There institution former sit sell nor.')
+2026-04-17 06:29:39 - healthcare_logger - INFO - Welcome to the Appoinment App
+2026-04-17 06:29:39 - healthcare_logger - INFO - Getting doctor with id 724
+2026-04-17 06:29:39 - healthcare_logger - INFO - Retrieving patient with id 638
+2026-04-17 06:29:39 - healthcare_logger - INFO - Adding appoinment Appointment(id=213, date='1991-10-02 15:03:39.267094', time='14:47:30', doctor=Doctor(id=724, name='Eduardo Barnes', specialization='Interior and spatial designer'), patient=Patient(id=638, name='Barbara Hall', dob='1984-07-12', ailment='There institution former sit sell nor.'))
+2026-04-17 06:29:39 - healthcare_logger - INFO - Appoinment added: Appointment(id=213, date='1991-10-02 15:03:39.267094', time='14:47:30', doctor=Doctor(id=724, name='Eduardo Barnes', specialization='Interior and spatial designer'), patient=Patient(id=638, name='Barbara Hall', dob='1984-07-12', ailment='There institution former sit sell nor.'))

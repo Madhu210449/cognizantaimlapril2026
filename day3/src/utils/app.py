@@ -1,5 +1,6 @@
 import sys
 import os
+from faker import Faker
 
 #add project root to python path
 
@@ -15,56 +16,46 @@ from src.models.appoinment import Appointment
 from src.stores.doctorstore import DoctorStore
 from src.stores.patientstore import PatientStore
 from src.stores.appoinmentstore import AppoinmentStore
-from src.exceptions.doctor_not_found_exception import DoctorNotFoundException
-from src.exceptions.patient_not_found_exception import PatientNotFoundException
-from src.exceptions.appoinment_not_found_exception import AppoinmentNotFoundException
 
 """
 entry point for healthcare application . this module will initialize the application and start the main loop
 """
 
 logger = setup_logger()
+faker = Faker()
+doctorstore = DoctorStore()
+patientstore = PatientStore()
+appoinmentstore = AppoinmentStore()
+
+
 doctor_id=0
 patient_id=0
-def doctor_app(doctor_store: DoctorStore, id: int, name: str, specialization: str):
-    """
-    add doctor to doctor store
-    """
+
+def doctor_app():
+    logger.info("Welcome to the Doctor App")
+    doctor=Doctor(id = faker.random_int(min=1, max=1000), name=faker.name(), specialization=faker.job())
+    doctorstore.add_doctor(doctor)
+    logger.info(f"Doctor added: {doctor}")
     global doctor_id
-    doctor_id += 1
-    doctor = Doctor(doctor_id, name, specialization)
-    doctor_store.add_doctor(doctor)
-    logger.info(f"Doctor {doctor} added successfully")
-    doctor_store.get_all_doctors()
-    doctor_store.get_doctor_by_id(id)
-    doctor_store.update_doctor(id, name="Dr. Smith", specialization="Cardiology")
+    doctor_id = doctor.id
+ 
 
-
-def patient_app(patient_store: PatientStore, id: int, name: str, age: int, doctor_id: int):
-    """
-    add patient to patient store
-    """
+def patient_app():
+    logger.info("Welcome to the Patient App")
+    patient=Patient(id = faker.random_int(min=1, max=1000), name=faker.name(), dob=faker.date_of_birth(), ailment=faker.sentence())
+    patientstore.add_patient(patient)
+    logger.info(f"Patient added: {patient}")
     global patient_id
-    patient_id += 1
-    patient = Patient(patient_id, name, age, doctor_id)
-    patient_store.add_patient(patient)
-    logger.info(f"Patient {patient} added successfully")
-    patient_store.get_all_patients()
-    patient_store.get_patient_by_id(id)
-    patient_store.update_patient(id, name="Jane Doe", age=25, doctor_id=2)
+    patient_id = patient.id
+    
 
-def appoinment_add(appoinment_store: AppoinmentStore, id: int, patient_id: int, doctor_id: int, date: str):
-    """
-    add appointment to appointment store
-    """
-    appoinment = Appoinment(id, patient_id, doctor_id, date)
-    appoinment_store.add_appoinment(appoinment)
-    logger.info(f"Appoinment {appoinment} added successfully")
-    appoinment_store.get_all_appoinments()
-    appoinment_store.get_appoinment_by_id(id)
-    appoinment_store.update_appoinment(id, date="2023-01-01", time="10:00", doctor=Doctor(1, "Dr. Smith", "Cardiology"), patient=Patient(1, "Jane Doe", 25, 2))
-
+def appoinment_app():
+    logger.info("Welcome to the Appoinment App")
+    appoinment=Appointment(id = faker.random_int(min=1, max=1000), doctor = doctorstore.get_doctor_by_id(doctor_id), patient = patientstore.get_patient_by_id(patient_id), date=faker.date_time(), time=faker.time())
+    appoinmentstore.add_appoinment(appoinment)
+    logger.info(f"Appoinment added: {appoinment}")
+    
 if __name__ == "__main__":
-    doctor_store = DoctorStore()
-    patient_store = PatientStore()
-    appoinment_store = AppoinmentStore()
+    doctor_app()
+    patient_app()
+    appoinment_app()
