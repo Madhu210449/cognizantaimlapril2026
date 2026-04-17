@@ -1,2 +1,23 @@
 2026-04-16 09:45:59 - healthcare_logger - INFO - Starting healthcare application
 2026-04-16 09:46:53 - healthcare_logger - INFO - Starting healthcare application
+2026-04-17 04:49:25 - healthcare_logger - INFO - Starting healthcare application
+2026-04-17 04:51:48 - healthcare_logger - INFO - Starting healthcare application
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding doctor Doctor(id=1, name='Dr. John Doe', specialization='Cardiology')
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding doctor Doctor(id=2, name='Dr. Jane Doe', specialization='Neurology')
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding patient Patient(id=1, name='Alice', dob='30', ailment='1')
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding patient Patient(id=2, name='Bob', dob='40', ailment='2')
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding appoinment Appointment(id=1, date='2023-10-01', time='10:00', doctor=Doctor(id=1, name='Dr. John Doe', specialization='Cardiology'), patient=Patient(id=1, name='Alice', dob='30', ailment='1'))
+2026-04-17 04:51:48 - healthcare_logger - INFO - Adding appoinment Appointment(id=2, date='2023-10-02', time='11:00', doctor=Doctor(id=2, name='Dr. Jane Doe', specialization='Neurology'), patient=Patient(id=2, name='Bob', dob='40', ailment='2'))
+2026-04-17 04:51:48 - healthcare_logger - INFO - Healthcare application started
+2026-04-17 05:01:43 - healthcare_logger - INFO - Adding doctor Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:01:43 - healthcare_logger - INFO - Doctor Doctor(id=1, name='Dr. Smith', specialization='Cardiology') added successfully
+2026-04-17 05:01:43 - healthcare_logger - INFO - Getting all doctors
+2026-04-17 05:01:43 - healthcare_logger - INFO - Getting doctor with id 1
+2026-04-17 05:01:43 - healthcare_logger - INFO - Updating doctor with id 1
+2026-04-17 05:01:43 - healthcare_logger - INFO - Getting doctor with id 1
+2026-04-17 05:05:38 - healthcare_logger - INFO - Adding doctor Doctor(id=1, name='Dr. Smith', specialization='Cardiology')
+2026-04-17 05:05:38 - healthcare_logger - INFO - Doctor Doctor(id=1, name='Dr. Smith', specialization='Cardiology') added successfully
+2026-04-17 05:05:38 - healthcare_logger - INFO - Getting all doctors
+2026-04-17 05:05:38 - healthcare_logger - INFO - Getting doctor with id 1
+2026-04-17 05:05:38 - healthcare_logger - INFO - Updating doctor with id 1
+2026-04-17 05:05:38 - healthcare_logger - INFO - Getting doctor with id 1

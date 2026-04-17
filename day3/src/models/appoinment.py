@@ -2,9 +2,9 @@
 create appointment model to represent appointment data
 """
 import typing
-from doctor import Doctor
-from patient import Patient
-from datetime import datetime
+from src.models.doctor import Doctor
+from src.models.patient import Patient
+from datetime import date,time
 class Appointment:
     """
     appointment model to represent appointment data

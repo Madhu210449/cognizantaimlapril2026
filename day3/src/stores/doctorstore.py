@@ -3,8 +3,8 @@ create doctor store to manage doctor data
 """
 import sys
 import os
-from models.doctor import Doctor
-from exceptions.doctor_not_found_exception import DoctorNotFoundException
+from src.models.doctor import Doctor
+from src.exceptions.doctor_not_found_exception import DoctorNotFoundException
 
 #add project root to python path
 
@@ -14,6 +14,8 @@ project_root = os.path.abspath(
 sys.path.insert(0, project_root)
 
 from conf.logger_conf import setup_logger
+
+logger = setup_logger()
 
 class DoctorStore:
     """
@@ -30,7 +32,7 @@ class DoctorStore:
         logger.info("Getting all doctors")
         return self.doctors
 
-    def get_doctor_by_id(self, doctor_id: int):-> Doctor:
+    def get_doctor_by_id(self, doctor_id: int)-> Doctor:
         logger.info(f"Getting doctor with id {doctor_id}")
         for doctor in self.doctors:
             if doctor.id == doctor_id:
@@ -45,8 +47,11 @@ class DoctorStore:
                 doctor.name = name
             if specialization:
                 doctor.specialization = specialization
+        raise DoctorNotFoundException(f"Doctor with id {doctor_id} not found")
+
     def delete_doctor(self, doctor_id: int):
         logger.info(f"Deleting doctor with id {doctor_id}")
         doctor = self.get_doctor_by_id(doctor_id)
         if doctor:
             self.doctors.remove(doctor)
+        raise DoctorNotFoundException(f"Doctor with id {doctor_id} not found")
