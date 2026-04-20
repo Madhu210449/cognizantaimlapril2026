@@ -1,7 +1,7 @@
 #create class individual using pydantic
 from pydantic import BaseModel, Field
-from src.models.customer import Customer
-from src.models.gender import Gender
+from models.customer import Customer
+from models.gender import Gender
 from pydantic import FieldValidator
 from datetime import date
 
